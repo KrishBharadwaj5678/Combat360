@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Combat 360</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  <style>
+    .arjs-loader {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .arjs-loader div {
+      text-align: center;
+      font-size: 1.25em;
+      color: white;
+    }
+  </style>
+</head>
+
+<body style="margin : 0px; overflow: hidden;">
+
+  <div class="arjs-loader">
+    <div>Loading, please wait...</div>
+  </div>
+
+  <!-- a-frame scene -->
+  <a-scene
+    vr-mode-ui="enabled: false;"
+    renderer="logarithmicDepthBuffer: true;"
+    embedded
+    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+  >
+  
+    <!-- F16D Fighter Aircraft -->
+    <a-nft
+      type="nft"
+      url="./markers/F16D/F16D"
+      smooth="true"
+      smoothCount="10"
+      smoothTolerance=".01"
+      smoothThreshold="5"
+    >
+      <a-entity
+        gltf-model="./models/F16D/scene.gltf"
+        scale="30 30 30"
+        position="340 150 -120"
+        rotation="0 -90 0"
+      ></a-entity>
+    </a-nft>
+
+    <!-- Boeing CH47 Helicopter -->
+    <a-nft
+      type="nft"
+      url="./markers/BoeingCH47/BoeingCH47"
+      smooth="true"
+      smoothCount="10"
+      smoothTolerance=".01"
+      smoothThreshold="5"
+    >
+      <a-entity
+        gltf-model="./models/BoeingCH47/scene.gltf"
+        scale="0.7 0.7 0.7"
+        position="100 0 -30"
+        rotation="0 -90 0"
+      ></a-entity>
+    </a-nft>
+
+    <!-- Lighting -->
+    <a-entity light="type: ambient; intensity: 1"></a-entity>
+    <a-entity light="type: directional; intensity: 4" position="1 1 1"></a-entity>
+
+    <!-- static camera that moves according to the device movemenents -->
+    <a-entity camera></a-entity>
+  </a-scene>
+
+</body>
+</html>
