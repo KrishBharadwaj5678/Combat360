@@ -54,30 +54,98 @@
       <a-entity
         gltf-model="./models/F16D/scene.gltf"
         scale="30 30 30"
-        position="340 150 -120"
+        position="290 150 -120"
         rotation="0 -90 0"
       ></a-entity>
     </a-nft>
 
-    <!-- Boeing CH47 Helicopter -->
+    <!-- T-90SM Battle Tank -->
     <a-nft
       type="nft"
-      url="./markers/BoeingCH47/BoeingCH47"
+      url="./markers/T-90SM/t90"
       smooth="true"
       smoothCount="10"
       smoothTolerance=".01"
       smoothThreshold="5"
     >
       <a-entity
-        gltf-model="./models/BoeingCH47/scene.gltf"
-        scale="0.7 0.7 0.7"
-        position="100 0 -30"
+        gltf-model="./models/T-90SM/scene.gltf"
+        scale="25 25 25"
+        position="160 0 -80"
+        rotation="0 90 0"
+      ></a-entity>
+    </a-nft>
+
+    <!-- MIM104 Air Defense System -->
+    <a-nft
+      type="nft"
+      url="./markers/MIM104/MIM104"
+      smooth="true"
+      smoothCount="10"
+      smoothTolerance=".01"
+      smoothThreshold="5"
+    >
+      <a-entity
+        gltf-model="./models/MIM104/scene.gltf"
+        scale="2.4 2.4 2.4"
+        position="25 0 -15"
+        rotation="0 -180 0"
+      ></a-entity>
+    </a-nft>
+
+    <!-- Apache Helicopter -->
+    <a-nft
+      type="nft"
+      url="./markers/Apache64D/Apache"
+      smooth="true"
+      smoothCount="10"
+      smoothTolerance=".01"
+      smoothThreshold="5"
+    >
+      <a-entity
+        gltf-model="./models/Apache64D/scene.gltf"
+        scale="140 140 140"
+        position="120 0 -60"
+        rotation="0 -180 0"
+      ></a-entity>
+    </a-nft>
+
+    <!-- Anti Aircraft Drone System -->
+    <a-nft
+      type="nft"
+      url="./markers/AntiAircraft/AntiAircraft"
+      smooth="true"
+      smoothCount="10"
+      smoothTolerance=".01"
+      smoothThreshold="5"
+    >
+      <a-entity
+        gltf-model="./models/AntiAircraft/scene.gltf"
+        scale="35 35 35"
+        position="190 0 -100"
         rotation="0 -90 0"
       ></a-entity>
     </a-nft>
 
+    <!-- USS CVN-65 Aircraft Carrier -->
+    <a-nft
+      type="nft"
+      url="./markers/CVN-65/CVN65"
+      smooth="true"
+      smoothCount="10"
+      smoothTolerance=".01"
+      smoothThreshold="5"
+    >
+      <a-entity
+        gltf-model="./models/CVN-65/scene.gltf"
+        scale="0.7 0.7 0.7"
+        position="120 0 -70"
+        rotation="0 -180 0"
+      ></a-entity>
+    </a-nft>
+
     <!-- Lighting -->
-    <a-entity light="type: ambient; intensity: 1"></a-entity>
+    <a-entity light="type: ambient; intensity: 2"></a-entity>
     <a-entity light="type: directional; intensity: 4" position="1 1 1"></a-entity>
 
     <!-- static camera that moves according to the device movemenents -->
