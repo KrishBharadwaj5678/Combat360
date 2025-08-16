@@ -2,6 +2,8 @@
 
 **Combat 360** is an immersive web experience that uses **AR.js** to overlay 3D models onto tracked images, bringing augmented reality to life right in your browser! 🌐
 
+![Combat 360](https://github.com/KrishBharadwaj5678/Combat360/raw/main/Combat360.png)
+
 ---
 
 ## Features 🚀
