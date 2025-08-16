@@ -45,11 +45,11 @@ Check out the live demo here: [Combat 360 Demo](https://your-website-link.com) �
 
 ---
 
-## Usage 💡
+## Usage💡
 
 1. Download the **trackable images** from the *images* directory in this GitHub repo. 
 2. Load the page in your browser. 
-3. Point your device's camera at the image, and watch the 3D model appear! 
+3. Point your device's camera at the image, and watch the 3D model appear. 
 
 ---
 
