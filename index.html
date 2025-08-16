@@ -20,10 +20,22 @@
       align-items: center;
     }
 
-    .arjs-loader div {
-      text-align: center;
-      font-size: 1.25em;
-      color: white;
+    .spinner {
+      border: 7px solid rgba(255, 255, 255, 0.3);
+      border-top: 7px solid white;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
     }
   </style>
 </head>
@@ -31,7 +43,7 @@
 <body style="margin : 0px; overflow: hidden;">
 
   <div class="arjs-loader">
-    <div>Loading, please wait...</div>
+    <div class="spinner"></div>
   </div>
 
   <!-- a-frame scene -->
@@ -138,6 +150,23 @@
     >
       <a-entity
         gltf-model="./models/CVN-65/scene.gltf"
+        scale="0.6 0.6 0.6"
+        position="40 0 -50"
+        rotation="0 -180 0"
+      ></a-entity>
+    </a-nft>
+
+    <!-- Bell Boeing V-22 Osprey Military Helicopter -->
+    <a-nft
+      type="nft"
+      url="./markers/V22/V22"
+      smooth="true"
+      smoothCount="10"
+      smoothTolerance=".01"
+      smoothThreshold="5"
+    >
+      <a-entity
+        gltf-model="./models/V22/scene.gltf"
         scale="0.6 0.6 0.6"
         position="40 0 -50"
         rotation="0 -180 0"
