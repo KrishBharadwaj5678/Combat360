@@ -28,19 +28,19 @@
 
 ## 🛠️ Installation 
 
-1. Clone this repository:
+### 1️⃣ Clone this repository:
 
    ```bash
    git clone https://github.com/KrishBharadwaj5678/Combat360.git
    ```
    
-2. Navigate to the project directory:
+### 2️⃣ Navigate to the project directory:
 
    ```bash
    cd Combat360
    ```
    
-3. Open `index.html` in your browser or run it on a local server.
+### 3️⃣ Open `index.html` in your browser or run it on a local server.
 
 ---
 
