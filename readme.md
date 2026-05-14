@@ -44,7 +44,7 @@
 
 ---
 
-## Usage💡
+## 💡 Usage
 
 1. Download the **AR target images** from the repository’s *images* folder.
 2. Load the page in your browser. 
